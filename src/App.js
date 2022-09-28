@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Input from './Input'
 
 function App() {
   const [count, setCount] = useState(1)
@@ -57,6 +58,7 @@ function App() {
       <button onClick={setToApril}>April</button>
       <button onClick={setToGabe}>Gabe</button>
       <h2>{objUser.name}</h2>
+      <Input user={user} setUser={setUser}/>
       <h2>{objUser.location}</h2>
       <button onClick={setObjUserToWeston}>SetObjUser Weston</button>
       <button onClick={setObjUserToApril}>SetObjUser April</button>
